@@ -1,0 +1,198 @@
+<!-- I WROTE THE CODE IN WINDOWS OPERATING SYSTEM, USING VISUAL STUDIO CODE(VS CODE) AS MY IDE, AND I USED GOOGLE CHROME AS MY WEBSITE BROWSER.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- THE TITLE -->
+    <title>Gotom Golbe Lengs</title>
+    <style>
+        /* STYLE FOR THE WHOLE PAGE */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* STYLE FOR THE H1 ELEMENTS */
+        
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* STYLE FOR THE BUTTON CONTAINER */
+        
+        .BTN-CONTAINER {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+        }
+        /* HEADER STYLES */
+        
+        header {
+            background-color: rgb(75, 126, 136);
+            padding: 20px;
+            color: white;
+            width: 100%;
+            justify-content: center;
+            z-index: 200;
+            position: fixed;
+        }
+        
+        .CONTACTHEADING,
+        .ABOUTHEADING {
+            background-color: rgb(237, 242, 243);
+            padding: 20px;
+            color: rgb(10, 10, 10);
+        }
+        /* style for the span element containing my name at the header  */
+        
+        span {
+            color: hsl(330, 5%, 25%);
+        }
+        /* SECTION STYLE*/
+        
+        section {
+            display: flex;
+            justify-content: center;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(243, 237, 238);
+            padding: 60px;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 100px;
+        }
+        /* STYLE FOR THE CONTACT SECTION  */
+        
+        .CONTACT-SECTION {
+            background-color: rgb(75, 126, 136);
+        }
+        
+        dd,
+        p {
+            margin: 10px;
+        }
+        
+        .hd {
+            font-weight: bolder;
+            color: rgb(75, 126, 136);
+        }
+        /* STYLE FOR BOTH THE BUTTON AND LINK*/
+        
+        button,
+        a {
+            padding: 10px 20px;
+            border: none;
+            font-size: 30px;
+            border-radius: 30px;
+            color: rgb(209, 199, 199);
+        }
+        /* LINK STYLES */
+        
+        .a {
+            color: rgb(24, 17, 17);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+
+            <!-- HEADER  -->
+            <header>
+                <h1>INS 205 ASSIGNMENT BY <span>Gotom Golbe Lengs</span></h1>
+
+            </header>
+        </div>
+        <div>
+            <div>
+
+                <!-- SECTION FOR INTRODUCTION-->
+                <section>
+                    <div>
+                        <hd class="hd">Full Name:</hd>
+                        <dd>Gotom Golbe Lengs</dd>
+                        <hd class="hd">Matriculation Number:</hd>
+                        <dd>UJ/2024/NS/0937</dd>
+                        <hd class="hd">Department:</hd>
+                        <dd>Computer Science</dd>
+                        <hd class="hd">Level:</hd>
+                        <dd>200 level</dd>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <!-- ABOUT SECTION-->
+                <div class="ABOUTHEADING">
+
+                    <h1>About</h1>
+                </div>
+                <section>
+
+                    <div>
+                        <!-- SECTION EXPRESSING HOW I FEEL ABOUT THE COURSE -->
+                        <p> INS 205 is one of the courses I enjoy because it introduces me to the world of web application development and website design. The course helps me understand how websites and web applications are created, structured, and maintained.
+                            I find it interesting because technology plays a major role in today's society, and web applications are used in almost every aspect of life, including education, business, healthcare, and communication.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <!--CONTACT SECTION CONTAINING MY UNIJOS EMAIL  -->
+                <div class="CONTACTHEADING">
+                    <h1>Contact</h1>
+                </div>
+                <section class="CONTACT-SECTION">
+                    <div>
+                        <h1>Let's work together</h1>
+                        <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possibe.</p>
+                        <a class="a" type="email" href="mailto:2024ns0937@unijos.edu.ng">Email me</a><br>
+                        <div class="BTN-CONTAINER">
+                            <button class="button" id="send-btn"><a type="email" href="maito:2024ns0937@unijos.edu.ng"> Send Email</a></button>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        </section>
+        <script>
+            //     Matric-number to button color
+            // Replace the matric number with your own
+
+            //    My matric number
+            const matric = "UJ/2024/NS/0937";
+            // CHANGE NOTHING BEYOND THIS POINT 
+            function hashString(str) {
+                let hash = 0;
+                for (let i = 0; i < str.lenth; i++) {
+                    hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
+                }
+                return hash;
+            }
+
+
+
+            // build an HSL colour: fixed saturation & lightness, varying hue
+            const buttonColour = `hsl(${hue}, 65%, 45%)`;
+            // applying the colour to the Send Email button 
+            document.getElementById("send-btn").style.background = buttonColour;
+        </script>
+        <!-- I WROTE THE IN A WINDOW OPERATING SYSTEM, USING VISUAL STUDIO CODE(VS CODE) AND I USED GOOGLE CHROME AS MY WEBSITE BROWSER -->
+</body>
+
+</html>
